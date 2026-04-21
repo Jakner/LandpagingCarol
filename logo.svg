@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Geometric shapes for Militão Advocacia logo -->
+  
+  <!-- Top right angle -->
+  <polygon points="320,40 400,80 360,120" fill="#000000"/>
+  
+  <!-- Top left angle -->
+  <polygon points="80,40 0,80 40,120" fill="#000000"/>
+  
+  <!-- Middle diagonal bar -->
+  <polygon points="80,100 320,100 340,140 60,140" fill="#000000"/>
+  
+  <!-- Bottom left triangle -->
+  <polygon points="60,140 120,140 90,200" fill="#000000"/>
+  
+  <!-- Bottom right triangle -->
+  <polygon points="340,140 280,140 310,200" fill="#000000"/>
+  
+  <!-- Text -->
+  <text x="200" y="260" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">Militão Advocacia</text>
+</svg>

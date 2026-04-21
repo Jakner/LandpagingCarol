@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(74, 95, 127, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 200px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.navbar-menu a:hover {
+    color: #a0b0c0;
+}
+
+.navbar-cta {
+    background: white;
+    color: #4a5f7f;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-cta:hover {
+    background: #f0f0f0;
+    color: #4a5f7f;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #4a5f7f 0%, #3a4f6f 100%);
+    color: white;
+    padding: 80px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #c0d0e0;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-badge {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #555;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.form-header h3 {
+    color: #2d3e4f;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4a5f7f;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: #4a5f7f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background: #3a4f6f;
+}
+
+/* SERVIÇO SECTION */
+.servico {
+    padding: 100px 20px;
+    background: #f8f8f8;
+}
+
+.servico .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.video-placeholder {
+    background: #5a6f8f;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.play-icon {
+    color: white;
+    font-size: 60px;
+    opacity: 0.8;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.video-placeholder:hover .play-icon {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.servico-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4a5f7f;
+    margin-bottom: 20px;
+}
+
+.servico-text p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* BENEFÍCIOS SECTION */
+.beneficios {
+    padding: 100px 20px;
+    background: white;
+    text-align: center;
+}
+
+.beneficios h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4a5f7f;
+    margin-bottom: 60px;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.beneficio {
+    padding: 30px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.beneficio-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.beneficio h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4a5f7f;
+    margin-bottom: 12px;
+}
+
+.beneficio p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.btn-secondary {
+    padding: 14px 40px;
+    background: #4a5f7f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-secondary:hover {
+    background: #3a4f6f;
+}
+
+/* DEPOIMENTOS SECTION */
+.depoimentos {
+    padding: 100px 20px;
+    background: #f0f0f0;
+}
+
+.depoimentos h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4a5f7f;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.depoimentos-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.video-placeholder-large {
+    background: #5a6f8f;
+    aspect-ratio: 4 / 3;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.depoimentos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.depoimento {
+    background: #5a6f8f;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.avatar-placeholder {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.depoimento h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.depoimento p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e0e8f0;
+}
+
+/* QUEM SOMOS SECTION */
+.quem-somos {
+    padding: 100px 20px;
+    background: #f8f8f8;
+}
+
+.quem-somos-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.imagem-placeholder {
+    background: #5a6f8f;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.quem-somos h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4a5f7f;
+    margin-bottom: 20px;
+}
+
+.quem-somos p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* FAQ SECTION */
+.faq {
+    padding: 100px 20px;
+    background: white;
+}
+
+.faq h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4a5f7f;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.faq-checkbox {
+    display: none;
+}
+
+.faq-item label {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    background: #f8f8f8;
+    transition: background 0.3s;
+}
+
+.faq-item label:hover {
+    background: #f0f0f0;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    background: white;
+}
+
+.faq-checkbox:checked + label {
+    background: #4a5f7f;
+    color: white;
+}
+
+.faq-checkbox:checked ~ .faq-answer {
+    max-height: 200px;
+    padding: 0 20px 20px 20px;
+}
+
+.faq-answer p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* CTA FINAL SECTION */
+.cta-final {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #4a5f7f 0%, #3a4f6f 100%);
+    color: white;
+}
+
+.cta-final-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cta-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-text p {
+    font-size: 15px;
+    color: #c0d0e0;
+    line-height: 1.8;
+}
+
+.cta-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.cta-form .form-header {
+    margin-bottom: 30px;
+}
+
+.cta-form .form-badge {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #555;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.cta-form .form-group {
+    margin-bottom: 20px;
+}
+
+.cta-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+    background: #2d3e4f;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .hero {
+        margin-top: 80px;
+    }
+
+    .hero-content,
+    .servico .container,
+    .depoimentos-content,
+    .quem-somos-content,
+    .cta-final-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .servico-text h2,
+    .quem-somos h2,
+    .cta-text h2,
+    .beneficios h2,
+    .depoimentos h2 {
+        font-size: 28px;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-grid {
+        max-width: 100%;
+    }
+}
