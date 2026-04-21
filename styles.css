@@ -43,7 +43,7 @@ body {
 }
 
 .logo-img {
-    height: 200px;
+    height: 60px;
     width: auto;
     max-width: 200px;
     object-fit: contain;
@@ -563,6 +563,10 @@ body {
         align-items: flex-start;
     }
 
+    .logo-img {
+        height: 40px;
+    }
+
     .navbar-container {
         flex-direction: column;
         align-items: flex-start;
@@ -579,6 +583,15 @@ body {
     .quem-somos-content,
     .cta-final-content {
         grid-template-columns: 1fr;
+    }
+
+    .servico,
+    .beneficios,
+    .depoimentos,
+    .quem-somos,
+    .faq,
+    .cta-final {
+        padding: 50px 20px;
     }
 
     .hero h1 {
