@@ -94,6 +94,14 @@ body {
     transition: transform 0.3s ease;
 }
 
+.adv-img {
+    height: 349px;
+    width: auto;
+    max-width: 1000px;
+    object-fit: contain;
+    
+}
+
 .logo-img:hover {
     transform: scale(1.05);
 }
